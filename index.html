@@ -1,0 +1,378 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>資科二A 411205138 鄭嘉怡</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+  <style>
+    /* 星空效果*/
+    #particles {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: -1;  /* 確保背景在所有內容的下面 */
+    }
+
+    /* 背景動畫漸變 */
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #000;  /* 背景設置為黑色 */
+      color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    /* 文章樣式 */
+    article {
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 12px;
+      padding: 30px;
+      margin: 20px 0;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    article:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    /* 標題 */
+    h2.major {
+      font-size: 2.5em;
+      font-weight: bold;
+      color: #ff99cc;
+      margin-top: 0;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      border-bottom: 2px solid #ff99cc;
+      padding-bottom: 10px;
+    }
+
+    h2.major:hover {
+      color: #ff66cc;
+    }
+
+    /* 頁面內部結構 */
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px 20px;
+    }
+
+    h3 {
+      font-size: 1.5em;
+      color: #ff99cc;
+      margin-bottom: 10px;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+
+    /* 表單樣式 */
+    form {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+      margin-top: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    form:hover {
+      transform: scale(1.02);
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #555;
+      border-radius: 8px;
+      background: #444;
+      color: #fff;
+      font-size: 1.1em;
+      margin-bottom: 15px;
+    }
+
+    input[type="submit"], input[type="reset"] {
+      background: #ff99cc;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover, input[type="reset"]:hover {
+      background: #ff66cc;
+    }
+
+    /* 圖片 */
+    .image.main img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      object-fit: cover;
+    }
+
+    /* 底部 */
+    footer {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      text-align: center;
+      color: #ccc;
+      border-top: 2px solid #ff99cc;
+    }
+
+    footer a {
+      color: #ff99cc;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Wrapper -->
+  <div id="wrapper">
+    <!-- Header -->
+    <header id="header">
+      <div class="logo">
+        <span class="icon fa fa-star"></span>
+      </div>
+      <div class="content">
+        <div class="inner">
+          <h1>鄭嘉怡</h1>
+          <p>靜宜大學 資科二A 411205138</p>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#intro">基本資料</a></li>
+          <li><a href="#work">自我介紹</a></li>
+          <li><a href="#about">爬蟲展示</a></li>
+          <li><a href="#contact">結果</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <div id="main">
+      <article id="intro">
+        <h2 class="major">基本資料</h2>
+        <span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+        <p>姓名：鄭嘉怡</p>
+        <p>出生年月日：2005/05/11</p>
+        <p>性別：女</p>
+        <p>Gmail：44881234kj@gmail.com</p>
+      </article>
+
+      <article id="work">
+        <h2 class="major">自我介紹</h2>
+        <span class="image main"><img src="images/pic02.jpg" alt="" /></span>
+        <h2>興趣</h2>
+        <p>* 追星 <br> * 畫畫</p>
+        <h2>自傳</h2>
+        <h3>成長背景</h3>
+       <p>我出生於一個和樂的家庭，父母從小教導我獨立與負責任的重要性。
+	   我從小對科技充滿興趣，所以對電腦與程式設計產生濃厚好奇心，
+		在成長過程中，他們不會干涉我的選擇，促使我在升學時選擇了資科系。</p>
+		<h3>求學經歷</h3>
+		<p>目前就讀於資科系，我修習過多門專業課程，包括：
+		<br>* 微積分、線性代數、機率論
+		<br>* Python、R 語言、Java 程式設計
+		<br>* 資料探勘、統計
+		<br>這些課程讓我累積了處理與分析資料的基本能力，
+		並打下進一步深入數據領域的基礎。</p>
+		<h3>工作經驗</h3>
+		<p>在學期間，我曾於微醺小夕陽擔任櫃台、收銀、內、外場。
+		這段經驗讓我學習到收班時需查看報表並分析和統計營業額。
+		此外，我也在高美手扒雞工作，雖然與數據分析領域不同，
+		但這段經歷讓我學會如何高效處理問題、與不同背景的人溝通、團隊合作的重要性。</p>
+		<h3>未來規劃</h3>
+		<p>短期內，我希望透過在校學學習、競賽累積更多數據分析的經驗，
+		並進一步精通 Python、R，提升自己的技術能力。
+		長期而言，我希望能成為一名商業數據分析師，
+		並運用數據分析技術幫助企業或社會解決實際問題。
+		例如，在金融、行銷或醫療等領域中，透過大數據分析來優化決策、提升效率。
+		此外，數據領域發展迅速，我會持續學習新技術，與時俱進，
+		讓自己在職場上保持競爭力。</p>
+      </article>
+
+      <article id="about">
+        <h2 class="major">爬蟲展示</h2><a href="https://www.ettoday.net/news/news-list.htm">ETtoday新聞雲</a>
+        <p>程式碼</p>
+		<pre><code>
+<p>
+from selenium import webdriver
+<br>from selenium.webdriver.chrome.service import Service
+<br>from webdriver_manager.chrome import ChromeDriverManager
+<br>from selenium.webdriver.common.by import By
+<br>from selenium.webdriver.common.keys import Keys
+<br>import time
+<br>from selenium.webdriver.support.ui import WebDriverWait
+<br>from selenium.webdriver.support import expected_conditions as EC
+<br>from selenium.common.exceptions import NoSuchElementException, ElementNotInteractableException
+</p>
+</code></pre>
+<pre><code>
+<p>
+# 定義抓取一頁資料的函數：從 ETtoday 新聞列表抓取標題與連結
+<br>def get_ettoday_news_list_headlines():
+	<br>options = webdriver.ChromeOptions()
+	<br>options.add_argument("--disable-blink-features=AutomationControlled"))
+<br># 啟動瀏覽器
+<br>    driver = webdriver.Chrome(
+        service=webdriver.chrome.service.Service(ChromeDriverManager().install()),
+        options=options
+</p>
+</code></pre>
+<p>
+<pre><code>
+try:
+    <br># 開啟 ETtoday 新聞列表頁面
+    <br>driver.get("https://www.ettoday.net/news/news-list.htm")
+
+    <br>WebDriverWait(driver, 10).until(
+        <br>EC.presence_of_element_located((By.CLASS_NAME, "part_list_2"))
+        )
+
+        <br># 模擬滾動頁面（可載入更多新聞）
+        <br>for _ in range(2):
+            <br>driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+            <br>time.sleep(5)
+    <br># 抓取新聞項目（h3 標題裡的超連結）
+    <br>news_items = driver.find_elements(By.CSS_SELECTOR, ".part_list_2 h3 a")
+
+    <br># 只取前 10 則新聞，印出標題與連結
+    <br>for item in news_items[:10]:
+        <br>print(item.text, item.get_attribute("href"))
+</p>
+</code></pre>
+<pre><code>
+<p>
+finally:
+    <br>#關閉瀏覽器
+    <br>driver.quit()
+
+<br># 如果這支檔案是直接執行，就執行主函式
+<br>if __name__ == "__main__":
+ <br>get_ettoday_news_list_headlines()
+</p>
+</code></pre>
+      </article>
+
+      <article id="contact">
+        <h2 class="major">結果</h2>
+        <form method="post" action="#">
+          <div class="fields">
+            <div class="field">
+              <label for="message">結果</label>
+			  <span class="image main"><img src="images/pic05.jpg" alt="" /></span>
+            </div>
+          </div>
+        </form>
+      </article>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <p class="copyright">+1 <a href=>Gina</a>.</p>
+    </footer>
+
+  </div>
+
+  <!-- 星星背景 -->
+  <div id="particles"></div>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- 加入粒子背景效果 -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS('particles', {
+      "particles": {
+        "number": {
+          "value": 200,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#ffffff"
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#ffffff"
+          },
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": false,
+          "anim": {
+            "enable": true,
+            "speed": 1,
+            "opacity_min": 0.1,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 3,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 40,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": false
+        },
+        "move": {
+          "enable": true,
+          "speed": 1,
+          "direction": "none",
+          "random": true,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": false,
+          },
+          "onclick": {
+            "enable": false,
+          },
+          "resize": true
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
+
+</body>
+</html>
