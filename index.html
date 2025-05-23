@@ -214,10 +214,9 @@
         <h2 class="major">程式碼</h2><a href="https://www.ettoday.net/news/news-list.htm">ETtoday新聞雲</a>
 	<span class="image main"><img src="images/pic04.jpg" alt="" /></span>
         
-Step1 載入套件	
+<h2>Step1 載入套件</h2>	
 	      <pre><code>
-<p>
-from selenium import webdriver
+<p>from selenium import webdriver
 <br>from selenium.webdriver.chrome.service import Service
 <br>from webdriver_manager.chrome import ChromeDriverManager
 <br>from selenium.webdriver.common.by import By
@@ -228,20 +227,20 @@ from selenium import webdriver
 <br>from selenium.common.exceptions import NoSuchElementException, ElementNotInteractableException
 </p>
 </code></pre>
+
+<h2>Step2 設計函數爬取新聞資料自動化，並存取所爬取的資料</h2>
 <pre><code>
-<p>
-# 定義抓取一頁資料的函數：從 ETtoday 新聞列表抓取標題與連結
-def get_ettoday_news_list_headlines()
+<p># 定義抓取一頁資料的函數：從 ETtoday 新聞列表抓取標題與連結
+def get_ettoday_news_list_headlines():
 	<br>options = webdriver.ChromeOptions()
-	<br>options.add_argument("--disable-blink-features=AutomationControlled"))
+	<br>options.add_argument("--disable-blink-features=AutomationControlled")
 <br># 啟動瀏覽器
 <br>    driver = webdriver.Chrome(
         service=webdriver.chrome.service.Service(ChromeDriverManager().install()),
         options=options
 </p>
 </code></pre>
-<p>
-<pre><code>
+<p><pre><code>
 try:
     <br># 開啟 ETtoday 新聞列表頁面
     <br>driver.get("https://www.ettoday.net/news/news-list.htm")
@@ -262,9 +261,9 @@ try:
         <br>print(item.text, item.get_attribute("href"))
 </p>
 </code></pre>
+<h2>Step3 最後關閉網頁</h2>
 <pre><code>
-<p>
-finally:
+<p>finally:
     <br>#關閉瀏覽器
     <br>driver.quit()
 
